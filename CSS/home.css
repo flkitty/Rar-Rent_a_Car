@@ -57,7 +57,11 @@
 /* Background Image Styling */
 /* Hero Image Styling */
 .hero-image {
+<<<<<<< HEAD
     background-image: url(../CSS/signupsignincover.webp);
+=======
+    background-image: url(../CSS/HOMECOVER.webp);
+>>>>>>> ae05a52e616f5499200c08bda8a8a9ac3964d091
     background-size: cover;
     background-position: center;
     height: 100vh;
