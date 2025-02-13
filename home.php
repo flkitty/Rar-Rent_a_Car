@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HonkAndSmile - Home</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="navbar">
@@ -127,16 +128,38 @@
     </div>
 
     <!-- Meet the Hosts Section -->
-    <div id="meet-the-hosts" class="meet-the-hosts">
-        <h2>Meet the Hosts</h2>
-        <div class="hosts">
-            <div class="host">Host 1</div>
-            <div class="host">Host 2</div>
-            <div class="host">Host 3</div>
-            <div class="host">Host 4</div>
-            <div class="host">Host 5</div>
+    <section id="meet-the-hosts">
+    <h2>Meet the Hosts</h2>
+    <div class="hosts-container">
+        <div class="host">
+            <img src="https://via.placeholder.com/150" alt="Michelle Williams">
+            <h3>Michelle Williams</h3>
+            <p>Email: <a href="mailto:hh0111@wayne.edu">hh0111@wayne.edu</a></p>
+        </div>
+        <div class="host">
+            <img src="https://via.placeholder.com/150" alt="Faiza Laskar">
+            <h3>Faiza Laskar</h3>
+            <p>Email: <a href="mailto:hh0237@wayne.edu">hh0237@wayne.edu</a></p>
+        </div>
+        <div class="host">
+            <img src="https://via.placeholder.com/150" alt="Tim Bui">
+            <h3>Tim Bui</h3>
+            <p>Email: <a href="mailto:buitimanh@wayne.edu">buitimanh@wayne.edu</a></p>
+        </div>
+        <div class="host">
+            <img src="https://via.placeholder.com/150" alt="Dheye Algalhan">
+            <h3>Dheye Algalhan</h3>
+            <p>Email: <a href="mailto:hz8323@wayne.edu">hz8323@wayne.edu</a></p>
         </div>
     </div>
+</section>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-box">
+        <p>For any inquiries, reach out to us:</p>
+        <p>Email: <a href="mailto:team@yourproject.com">team@yourproject.com</a></p>
+    </div>
+</section>
 
     <!-- Contact Information Section -->
     <div id="contact-info" class="contact-info">
