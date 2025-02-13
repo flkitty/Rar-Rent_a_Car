@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HonkAndSmile - Home</title>
+    <title>RAR - Home</title>
     <link rel="stylesheet" href="../CSS/home.css">
 
 </head>
@@ -17,7 +17,7 @@
         <div class="menu">
             <a href="#hero-image">Home</a>
             <a href="#browse-cars">Browse Cars</a>
-            <a href="#most-rented">Cars of the Month</a>
+            <a href="help.php">Help</a>
             <a href="#meet-the-hosts">Meet the Hosts</a>
             <a href="#contact-info">Contact Us</a>
         </div>
@@ -30,7 +30,7 @@
     <!-- Background Image Section -->
     <div id="hero-image" class="hero-image">
     <div class="hero-content">
-        <h1>Welcome to HonkAndSmile!</h1>
+        <h1>Welcome to RAR!</h1>
         <p>Your trusted car rental service with flexible payment plans up to 3 months.</p>
         <!-- Search Section -->
         <div class="search-section">
@@ -117,15 +117,15 @@
         <button onclick="window.location.href='browse-cars.php'">Browse Cars</button>
     </div>
 
-    <!-- Most Rented Cars Section -->
-    <div id="most-rented" class="most-rented">
-        <h2>Most Rented Cars This Month</h2>
+    <!-- Most Rented Cars Section 
+    <div id="help" class="help">
+        <h2>Need help?</h2>
         <div class="cars">
             <div class="car-item">Car 1</div>
             <div class="car-item">Car 2</div>
             <div class="car-item">Car 3</div>
         </div>
-    </div>
+    </div>-->
 
     <!-- Meet the Hosts Section -->
     <div id="meet-the-hosts" class="meet-the-hosts">
@@ -135,7 +135,6 @@
             <div class="host">Host 2</div>
             <div class="host">Host 3</div>
             <div class="host">Host 4</div>
-            <div class="host">Host 5</div>
         </div>
     </div>
 
@@ -144,10 +143,9 @@
         <h2>Contact Us</h2>
         <ul>
             <li>Faiza Laskar - Phone: 313-603-1960 - Email: hh0237@wayne.edu</li>
-            <li>Teammate one - Phone: 123-456-7891 - Email: aa1234@wayne.edu</li>
-            <li>Teammate two - Phone: 123-456-7892 - Email: ab1234@wayne.edu</li>
-            <li>Teammate three - Phone: 123-456-7893 - Email: ac1234@wayne.edu</li>
-            <li>Teammate four - Phone: 123-456-7894 - Email: ad1234@wayne.edu</li>
+            <li>Michelle Williams - Phone: 123-456-7891 - Email: aa1234@wayne.edu</li>
+            <li>Tim Bui - Phone: 123-456-7892 - Email: ab1234@wayne.edu</li>
+            <li>Dheya Algaham - Phone: 123-456-7893 - Email: ac1234@wayne.edu</li>
         </ul>
     </div>
 

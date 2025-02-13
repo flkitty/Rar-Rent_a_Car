@@ -53,54 +53,66 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HonkAndSmile - Sign Up</title>
-    <link rel="stylesheet" href="signup.css">
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="home.php">
+    <title>RAR - Sign Up</title>
+    <link rel="stylesheet" href="../CSS/home.css">
+
 </head>
 <body>
     <div class="navbar">
-        <!--<a href="#hero-image"><img src="Rcarlogo.png" height = 60 width = 30/></a>-->
+    <!--<a href="#hero-image"><img src="Rcarlogo.png" height = 60 width = 30/></a>-->
         <!--<a href="#hero-image"><img src="Rcarlogo.png" alt="Logo" height = 60/></a>-->
         <!--<a href="#hero-image"><img src="Rcarlogo.png" alt="Logo" height="60" style="margin-right: 20px;" /></a>-->
-        <a href="#hero-image"><img src="Rcarlogo.png" alt="Logo" height="60" style="margin-right: 20px;" /></a>
-    </div>
-    <div class="signup-container">
-        <h1>Create an Account</h1>
-        <form id="signup-form" action="process-signup.php" method="post" onsubmit="return validateForm()">
-            <div class="input-group">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
-                <small id="fname-error" class="error-message"></small>
-            </div>
-            <div class="input-group">
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
-                <small id="lname-error" class="error-message"></small>
-            </div>
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                <small id="email-error" class="error-message"></small>
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Create a password" required>
-                <small id="password-error" class="error-message"></small>
-            </div>
-            <div class="input-group">
-                <label for="confirm-password">Confirm Password</label>
-                <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm your password" required>
-                <small id="confirm-password-error" class="error-message"></small>
-            </div>
-            <button type="submit" class="btn">Sign Up</button>
-            <p class="login-link">Already have an account? <a href="login.php">Login</a></p>
-        </form>
-        <button type="button" class="btn-secondary" onclick="window.location.href='termsandconditions.php';">
-            View Terms and Conditions
-        </button>
+        <a href="home.php"><img src="Rcarlogo.png" alt="Logo" height="60" style="margin-right: 20px;" /></a>
+        
+        <div class="menu">
+            <a href="home.php">Home</a>
+            <a href="home.php#browse-cars">Browse Cars</a>
+            <a href="help.php">Help</a>
+            <a href="home.php#meet-the-hosts">Meet the Hosts</a>
+            <a href="home.php#contact-info">Contact Us</a>
+        </div>
     </div>
 
+    <div id="hero-image" class="hero-image">
+    <div class="hero-content">
+        <div class="signup-container">
+            <h1>Create an Account</h1>
+            <form id="signup-form" action="process-signup.php" method="post" onsubmit="return validateForm()">
+                <div class="input-group">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+                    <small id="fname-error" class="error-message"></small>
+                </div>
+                <div class="input-group">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
+                    <small id="lname-error" class="error-message"></small>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <small id="email-error" class="error-message"></small>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password" required>
+                    <small id="password-error" class="error-message"></small>
+                </div>
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm your password" required>
+                    <small id="confirm-password-error" class="error-message"></small>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <p class="login-link">Already have an account? <a href="login.php">Login</a></p>
+            </form>
+            <button type="button" class="btn-secondary" onclick="window.location.href='termsandconditions.php';">
+                View Terms and Conditions
+            </button>
+        </div>
+    </div>
+    </div>
+    
     <script>
         // Function to validate the form
         function validateForm() {
@@ -146,10 +158,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
 
             // Validate password strength
-            const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+            const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&#]{8,}$/;
             if (!passwordRegex.test(password.value)) {
                 passwordError.textContent = 'Password must be at least 8 characters long, include uppercase, lowercase, a number, and a special character.';
                 isValid = false;
+            }
+            else{
+                isValid = true; 
             }
 
             // Confirm password match
@@ -157,9 +172,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 confirmPasswordError.textContent = 'Passwords do not match.';
                 isValid = false;
             }
+            else{
+                isValid = true; 
+            }
 
             return isValid; // Prevent form submission if validation fails
         }
     </script>
+     <footer>
+        <p>&copy; 2025 HonkAndSmile</p>
+        <p><a href="termsandconditions.php">Terms and Conditions</a> | <a href="privacy.php">Privacy</a></p>
+    </footer>
 </body>
 </html>

@@ -3,27 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HonkAndSmile - Login</title>
-    <link rel="stylesheet" href="login.css">
+    <title>RAR - Login</title>
+    <link rel="stylesheet" href="../CSS/home.css">
 </head>
 <body>
-    <div class="login-container">
-        <h1>Login to HonkAndSmile </h1>
-        <form action="process-login.php" method="post">
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required>
-            </div>
-            <button type="submit" class="btn">Login</button>
-            <p class="signup-link">Don't have an account? <a href="signup.php">Sign Up</a></p>
-        </form>
-        <button type="button" class="btn-secondary" onclick="window.location.href='termsandconditions.php';">
-            View Terms and Conditions
-        </button>
+    <div class="navbar">
+    <!--<a href="#hero-image"><img src="Rcarlogo.png" height = 60 width = 30/></a>-->
+        <!--<a href="#hero-image"><img src="Rcarlogo.png" alt="Logo" height = 60/></a>-->
+        <!--<a href="#hero-image"><img src="Rcarlogo.png" alt="Logo" height="60" style="margin-right: 20px;" /></a>-->
+        <a href="home.php"><img src="Rcarlogo.png" alt="Logo" height="60" style="margin-right: 20px;" /></a>
+        
+        <div class="menu">
+            <a href="home.php#hero-image">Home</a>
+            <a href="home.php#browse-cars">Browse Cars</a>
+            <a href="help.php">Help</a>
+            <a href="home.php#meet-the-hosts">Meet the Hosts</a>
+            <a href="home.php#contact-info">Contact Us</a>
+        </div>
     </div>
+
+    <div id="hero-image" class="hero-image">
+    <div class="hero-content">
+        <div class="login-container">
+            <h1>Login to HonkAndSmile </h1>
+            <form action="process-login.php" method="post">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p class="signup-link">Don't have an account? <a href="signup.php">Sign Up</a></p>
+            </form>
+            <button type="button" class="btn-secondary" onclick="window.location.href='termsandconditions.php';">
+                View Terms and Conditions
+            </button>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 HonkAndSmile</p>
+        <p><a href="termsandconditions.php">Terms and Conditions</a> | <a href="privacy.php">Privacy</a></p>
+    </footer>
 </body>
 </html>

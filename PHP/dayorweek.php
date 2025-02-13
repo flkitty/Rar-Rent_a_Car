@@ -3,15 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rent a Car - HonkAndSmile</title>
-    <link rel="stylesheet" href="dayorweek.css">
+    <title>RAR - DayOrWeek</title>
+    <link rel="stylesheet" href="../CSS/home.css">
 </head>
 <body>
+<div class="navbar">
+    <!--<a href="#hero-image"><img src="Rcarlogo.png" height = 60 width = 30/></a>-->
+        <!--<a href="#hero-image"><img src="Rcarlogo.png" alt="Logo" height = 60/></a>-->
+        <!--<a href="#hero-image"><img src="Rcarlogo.png" alt="Logo" height="60" style="margin-right: 20px;" /></a>-->
+        <a href="home.php"><img src="Rcarlogo.png" alt="Logo" height="60" style="margin-right: 20px;" /></a>
+        
+        <div class="menu">
+            <a href="home.php">Home</a>
+            <a href="home.php#browse-cars">Browse Cars</a>
+            <a href="help.php">Help</a>
+            <a href="home.php#meet-the-hosts">Meet the Hosts</a>
+            <a href="home.php#contact-info">Contact Us</a>
+        </div>
+    </div>
     <div id="hero-image" class="hero-image">
     <div class="hero-content">
         <div class="content">
             <h1>Choose Your Rental Option</h1>
-            <div class="button-container">
+            <div class="button-containerr">
                 <!-- Day Button -->
                 <a href="browse-cars.php" class="rent-button day-button">
                     Rent for a Day
@@ -25,5 +39,9 @@
         </div>
     </div>
     </div>
+    <footer>
+        <p>&copy; 2025 HonkAndSmile</p>
+        <p><a href="termsandconditions.php">Terms and Conditions</a> | <a href="privacy.php">Privacy</a></p>
+    </footer>
 </body>
 </html>

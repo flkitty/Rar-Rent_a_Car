@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms and Conditions</title>
-    <link rel="stylesheet" href="terms.css">
+    <title>RAR - Terms and Conditions</title>
+    <link rel="stylesheet" href="../CSS/terms.css">
 </head>
 <body>
     <div class="terms-container">
@@ -36,9 +36,13 @@
         
         <h2>6. Contact Us</h2>
         <p>If you have any questions, concerns, or feedback regarding these Terms and Conditions or our services, please feel free to contact us. We value your input and are here to address any issues promptly.</p>
-        <p>You can reach us via email at <a href="mailto:support@carrental.com">support@carrental.com</a> or through the contact form available on our website.</p>
+        <p>You can reach us via email at <a href="mailto:faizaklaskar@gmail.com">faizaklaskar@gmail.com</a> or through the contact form available on our website.</p>
         
-        <a href="signup.php" class="back-link">Go Back</a>
+        <a href="home.php" class="back-link">Go Back</a>
     </div>
+    <footer>
+        <p>&copy; 2025 HonkAndSmile</p>
+        <p><a href="termsandconditions.php">Terms and Conditions</a> | <a href="privacy.php">Privacy</a></p>
+    </footer>
 </body>
 </html>
