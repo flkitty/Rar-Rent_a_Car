@@ -98,7 +98,7 @@
                 </script>
 
                     <!-- Load the Google Maps API -->
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCelw4cTPbbBcxST_7k53wvy5U9G1JkLTE&libraries=places&callback=initMap" async defer></script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGevhm49QqHUuNsrEs4kvSAHV8NX_uBs4&libraries=places&callback=initMap" async defer></script>
             </form>
         </div>
     </div>
@@ -111,11 +111,21 @@
         <img src="car3.jpg" alt="Car 3" class="car-image">
     </div>
 
-    <!-- Browse Cars Section -->
+    <!-- Browse Cars Section 
     <div id="browse-cars" class="browse-cars">
-        <h2>Browse Cars for Rent</h2>
+        <h1>Browse Cars for Rent</h1>
+        <img src="carcollage.png" alt="Car collage" class="car-image">
         <button onclick="window.location.href='browse-cars.php'">Browse Cars</button>
+    </div> -->
+    <div id="browse-cars" class="browse-cars-container">
+    <div class="car-image-container">
+        <img src="carcollage.png" alt="Car collage" class="car-image">
     </div>
+    <div class="browse-text">
+        <h1>Browse Cars for Rent</h1>
+        <button onclick="window.location.href='browse-cars.php'" class="browse-btnn">Browse Cars</button>
+    </div>
+
 
     <!-- Most Rented Cars Section 
     <div id="help" class="help">
