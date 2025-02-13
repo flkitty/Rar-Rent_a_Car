@@ -7,8 +7,26 @@
     <link rel="stylesheet" href="../CSS/home.css">
 </head>
 <body>
-    <div class="terms-container">
+<div class="navbar">
+    <!--<a href="#hero-image"><img src="Rcarlogo.png" height = 60 width = 30/></a>-->
+        <!--<a href="#hero-image"><img src="Rcarlogo.png" alt="Logo" height = 60/></a>-->
+        <!--<a href="#hero-image"><img src="Rcarlogo.png" alt="Logo" height="60" style="margin-right: 20px;" /></a>-->
+        <a href="home.php"><img src="Rcarlogo.png" alt="Logo" height="60" style="margin-right: 20px;" /></a>
+        
+        <div class="menu">
+            <a href="home.php">Home</a>
+            <a href="home.php#browse-cars">Browse Cars</a>
+            <a href="help.php">Help</a>
+            <a href="home.php#meet-the-hosts">Meet the Hosts</a>
+            <a href="home.php#contact-info">Contact Us</a>
+        </div>
+    </div>
+    <header1>
         <h1>Terms and Conditions</h1>
+    </header1>
+
+    <section class="privacy-container">
+        <h2>Introduction</h2>
         <p>Welcome to our Car Rental Service. By accessing or using this platform, you agree to adhere to and be bound by the following terms and conditions. These terms are designed to ensure a transparent, secure, and efficient experience for all users. Please read them carefully before proceeding to use our services.</p>
         
         <h2>1. Acceptance of Terms</h2>
@@ -39,7 +57,8 @@
         <p>You can reach us via email at <a href="mailto:faizaklaskar@gmail.com">faizaklaskar@gmail.com</a> or through the contact form available on our website.</p>
         
         <a href="home.php" class="back-link">Go Back</a>
-    </div>
+        </section>
+
     <footer>
         <p>&copy; 2025 HonkAndSmile</p>
         <p><a href="termsandconditions.php">Terms and Conditions</a> | <a href="privacy.php">Privacy</a></p>

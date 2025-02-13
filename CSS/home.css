@@ -471,6 +471,8 @@ h11 {
 
 .terms-container {
     background-color: #ffffff;
+    display: block;
+    text-align: center;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -505,4 +507,86 @@ h11 {
 
 .back-link:hover {
     text-decoration: underline;
+}
+
+
+.browse-cars-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: 90%;
+}
+
+.car-image-container {
+    flex: 1;
+}
+
+.car-image {
+    width: 100%;
+    max-width: 600px; /* Adjust width as needed */
+    display: block;
+}
+
+.browse-text {
+    flex: 1;
+    text-align: center;
+}
+
+.browse-text h1 {
+    font-size: 4rem; /* Adjust the size as needed */
+    font-weight: bold;
+}
+.browse-btnn {
+    background-color: green;
+    color: white;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.browse-btnn:hover {
+    background-color: #0c4a19;
+}
+
+/* Privacy Policy Content */
+.privacy-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Header */
+header1 {
+    color: rgb(24, 22, 22);
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+/* Headings */
+.privacy-container h2 {
+    color: #151617;
+    margin-top: 20px;
+}
+
+/* Lists */
+.privacy-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .privacy-container {
+        margin: 20px;
+        padding: 20px;
+    }
 }
