@@ -163,24 +163,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 passwordError.textContent = 'Password must be at least 8 characters long, include uppercase, lowercase, a number, and a special character.';
                 isValid = false;
             }
-            else{
-                isValid = true; 
-            }
-
+            
             // Confirm password match
             if (password.value !== confirmPassword.value) {
                 confirmPasswordError.textContent = 'Passwords do not match.';
                 isValid = false;
             }
-            else{
-                isValid = true; 
-            }
+        
 
             return isValid; // Prevent form submission if validation fails
         }
     </script>
      <footer>
-        <p>&copy; 2025 HonkAndSmile</p>
+        <p>&copy; 2025 Rar</p>
         <p><a href="termsandconditions.php">Terms and Conditions</a> | <a href="privacy.php">Privacy</a></p>
     </footer>
 </body>

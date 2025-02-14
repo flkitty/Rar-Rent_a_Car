@@ -162,7 +162,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 HonkAndSmile</p>
+        <p>&copy; 2025 Rar</p>
         <p><a href="termsandconditions.php">Terms and Conditions</a> | <a href="privacy.php">Privacy</a></p>
     </footer>
 
