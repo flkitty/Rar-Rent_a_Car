@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RAR - Sign Up</title>
-    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/signup.css">
 
 </head>
 <body>
@@ -70,6 +70,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <a href="help.php">Help</a>
             <a href="home.php#meet-the-hosts">Meet the Hosts</a>
             <a href="home.php#contact-info">Contact Us</a>
+        </div>
+        <div class="auth-buttons">
+            <button onclick="window.location.href='signup.php'">Sign Up</button>
+            <button onclick="window.location.href='login.php'">Log In</button>
         </div>
     </div>
 
@@ -163,13 +167,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 passwordError.textContent = 'Password must be at least 8 characters long, include uppercase, lowercase, a number, and a special character.';
                 isValid = false;
             }
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> Faiza
             // Confirm password match
             if (password.value !== confirmPassword.value) {
                 confirmPasswordError.textContent = 'Passwords do not match.';
                 isValid = false;
             }
+<<<<<<< HEAD
         
+=======
+>>>>>>> Faiza
 
             return isValid; // Prevent form submission if validation fails
         }

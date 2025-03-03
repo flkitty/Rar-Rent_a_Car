@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAR - Privacy Policy</title>
-    <link rel="stylesheet" href="../CSS/home.css">
+    <title>RAR - Privacy</title>
+    <link rel="stylesheet" href="../CSS/privacy.css">
 </head>
 <body>
 <div class="navbar">
@@ -14,68 +14,58 @@
         <a href="home.php"><img src="Rcarlogo.png" alt="Logo" height="60" style="margin-right: 20px;" /></a>
         
         <div class="menu">
-            <a href="home.php">Home</a>
+            <a href="home.php#hero-image">Home</a>
             <a href="home.php#browse-cars">Browse Cars</a>
             <a href="help.php">Help</a>
             <a href="home.php#meet-the-hosts">Meet the Hosts</a>
             <a href="home.php#contact-info">Contact Us</a>
         </div>
+        <div class="auth-buttons">
+            <button onclick="window.location.href='signup.php'">Sign Up</button>
+            <button onclick="window.location.href='login.php'">Log In</button>
+        </div>
     </div>
-    <header1>
-        <h1>Privacy Policy</h1>
-    </header1>
 
-    <section class="privacy-container">
-        <h2>1. Introduction</h2>
-        <p>Welcome to our Car Rental Service. Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your personal information.</p>
+    <div id="hero-image" class="hero-image">
+    <div class="hero-content">
+    <div class="privacy-container">
+    <h2>Introduction</h2>
+        <p>Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your information when you use our website.</p>
 
-        <h2>2. Information We Collect</h2>
-        <p>We collect the following types of information:</p>
+        <h2>Information We Collect</h2>
         <ul>
-            <li>Personal Information (Name, Email, Phone Number, Address)</li>
-            <li>Payment Information (Credit/Debit Card Details, Billing Address)</li>
-            <li>Rental History and Preferences</li>
-            <li>Device and Browsing Data (IP Address, Cookies, Browser Type)</li>
+            <li>Personal Information (Name, Email, Phone Number, etc.)</li>
+            <li>Usage Data (IP Address, Browser Type, Page Views, etc.)</li>
+            <li>Cookies and Tracking Technologies</li>
         </ul>
 
-        <h2>3. How We Use Your Information</h2>
-        <p>Your data is used to:</p>
+        <h2>How We Use Your Information</h2>
         <ul>
-            <li>Process bookings and payments securely</li>
-            <li>Provide customer support and updates</li>
-            <li>Improve our services and enhance user experience</li>
-            <li>Ensure security and prevent fraud</li>
+            <li>To provide and improve our services</li>
+            <li>To personalize user experience</li>
+            <li>To communicate with users about updates and offers</li>
+            <li>To ensure website security</li>
         </ul>
 
-        <h2>4. Data Protection</h2>
-        <p>We implement strong security measures to protect your personal information from unauthorized access, disclosure, or misuse.</p>
+        <h2>Sharing Your Information</h2>
+        <p>We do not sell, trade, or rent your personal data to third parties. However, we may share information with trusted service providers to operate our website.</p>
 
-        <h2>5. Third-Party Sharing</h2>
-        <p>We do not sell your personal data. However, we may share it with:</p>
-        <ul>
-            <li>Payment processors for secure transactions</li>
-            <li>Legal authorities if required by law</li>
-            <li>Marketing services (only with your consent)</li>
-        </ul>
+        <h2>Security</h2>
+        <p>We take reasonable measures to protect your data but cannot guarantee absolute security.</p>
 
-        <h2>6. Your Rights</h2>
-        <p>You have the right to:</p>
-        <ul>
-            <li>Access and update your personal information</li>
-            <li>Request data deletion</li>
-            <li>Opt out of marketing communications</li>
-        </ul>
-
-        <h2>7. Changes to This Policy</h2>
-        <p>We may update this policy from time to time. Any changes will be posted on this page.</p>
-
-        <h2>8. Contact Us</h2>
-        <p>If you have any questions, contact us at <a href="mailto:faizaklaskar@gmail.com">faizaklaskar@gmail.com</a>.</p>
+        <h2>Your Rights</h2>
+        <p>You have the right to access, update, or delete your personal information. Contact us if you have any concerns.</p>
+        
+        <h2>Contact Us</h2>
+        <p>If you have any questions, concerns, or feedback regarding these Terms and Conditions or our services, please feel free to contact us. We value your input and are here to address any issues promptly.</p>
+        <p>You can reach us via email at <a href="mailto:faizaklaskar@gmail.com">faizaklaskar@gmail.com</a> or through the contact form available on our website.</p>
+        
         <a href="home.php" class="back-link">Go Back</a>
-    </section>
-
+    </div>
+</div>
+</div>
     <footer>
-        <p>&copy; 2025 Rar</p>
+        <p>&copy; 2025 HonkAndSmile</p>
         <p><a href="termsandconditions.php">Terms and Conditions</a> | <a href="privacy.php">Privacy</a></p>
     </footer>
 </body>

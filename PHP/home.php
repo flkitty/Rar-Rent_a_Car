@@ -125,7 +125,6 @@
         <h1>Browse Cars for Rent</h1>
         <button onclick="window.location.href='browse-cars.php'" class="browse-btnn">Browse Cars</button>
     </div>
-</div>
 
 
     <!-- Most Rented Cars Section 

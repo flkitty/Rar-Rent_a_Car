@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RAR - DayOrWeek</title>
-    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/dayorweek.css">
 </head>
 <body>
 <div class="navbar">
@@ -19,6 +19,10 @@
             <a href="help.php">Help</a>
             <a href="home.php#meet-the-hosts">Meet the Hosts</a>
             <a href="home.php#contact-info">Contact Us</a>
+        </div>
+        <div class="auth-buttons">
+            <button onclick="window.location.href='signup.php'">Sign Up</button>
+            <button onclick="window.location.href='login.php'">Log In</button>
         </div>
     </div>
     <div id="hero-image" class="hero-image">
