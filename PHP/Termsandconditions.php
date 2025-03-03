@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RAR - Terms and Conditions</title>
-    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/Termsandconditions.css">
 </head>
 <body>
+<div class="navbar">
+    <!--<a href="#hero-image"><img src="Rcarlogo.png" height = 60 width = 30/></a>-->
+        <!--<a href="#hero-image"><img src="Rcarlogo.png" alt="Logo" height = 60/></a>-->
+        <!--<a href="#hero-image"><img src="Rcarlogo.png" alt="Logo" height="60" style="margin-right: 20px;" /></a>-->
+        <a href="home.php"><img src="Rcarlogo.png" alt="Logo" height="60" style="margin-right: 20px;" /></a>
+        
+        <div class="menu">
+            <a href="home.php#hero-image">Home</a>
+            <a href="home.php#browse-cars">Browse Cars</a>
+            <a href="help.php">Help</a>
+            <a href="home.php#meet-the-hosts">Meet the Hosts</a>
+            <a href="home.php#contact-info">Contact Us</a>
+        </div>
+        <div class="auth-buttons">
+            <button onclick="window.location.href='signup.php'">Sign Up</button>
+            <button onclick="window.location.href='login.php'">Log In</button>
+        </div>
+    </div>
+
+    <div id="hero-image" class="hero-image">
+    <div class="hero-content">
     <div class="terms-container">
         <h1>Terms and Conditions</h1>
         <p>Welcome to our Car Rental Service. By accessing or using this platform, you agree to adhere to and be bound by the following terms and conditions. These terms are designed to ensure a transparent, secure, and efficient experience for all users. Please read them carefully before proceeding to use our services.</p>
@@ -40,6 +61,8 @@
         
         <a href="home.php" class="back-link">Go Back</a>
     </div>
+</div>
+</div>
     <footer>
         <p>&copy; 2025 HonkAndSmile</p>
         <p><a href="termsandconditions.php">Terms and Conditions</a> | <a href="privacy.php">Privacy</a></p>
