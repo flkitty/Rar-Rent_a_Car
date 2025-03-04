@@ -167,20 +167,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 passwordError.textContent = 'Password must be at least 8 characters long, include uppercase, lowercase, a number, and a special character.';
                 isValid = false;
             }
-<<<<<<< HEAD
-            
-=======
-
->>>>>>> Faiza
             // Confirm password match
             if (password.value !== confirmPassword.value) {
                 confirmPasswordError.textContent = 'Passwords do not match.';
                 isValid = false;
             }
-<<<<<<< HEAD
-        
-=======
->>>>>>> Faiza
 
             return isValid; // Prevent form submission if validation fails
         }
