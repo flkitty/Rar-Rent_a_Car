@@ -153,23 +153,51 @@
 }
 
 /* Browse Cars Section */
-.browse-cars {
-    text-align: center;
-    margin-top: 30px;
+
+.browse-cars-container {
+    display: flex;
+    align-items: center; /* Aligns image and text vertically */
+    justify-content: space-between; /* Spreads content across */
+    gap: 30px; /* Adds spacing between the image and text */
+    padding: 20px;
 }
 
-.browse-cars button {
-    padding: 10px 20px;
-    background-color: #28a745;
+.car-image-container {
+    flex: 1.5; /* Makes the image take half the space */
+    text-align: left;
+}
+
+.car-image {
+    width: 100%; /* Makes the image responsive */
+}
+
+.browse-text {
+    flex: 1; /* Makes text take the other half */
+    text-align: center;
+}
+
+.browse-text h1 {
+    font-size: 70px; /* Increases text size */
+    font-weight: bold;
+}
+
+.browse-btnn {
+    
+    margin-top: 15px;
+    padding: 12px 24px;
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 18px;
+    align-items: center;
 }
 
-.browse-cars button:hover {
-    background-color: #218838;
+.browse-btnn:hover {
+    background-color: #0056b3;
 }
+
 
 /* Most Rented Cars */
 .most-rented {
@@ -201,6 +229,7 @@
     text-align: center;
     padding: 40px;
     background-color: #f4f4f4;
+    font-size: 28px;
 }
 
 
@@ -213,7 +242,7 @@
 
 
 .host {
-    width: 220px;
+    width: 250px;
     background: white;
     padding: 15px;
     border-radius: 10px;
@@ -224,8 +253,8 @@
 
 
 .host img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -235,7 +264,6 @@
     margin: 10px 0 5px;
     font-size: 18px;
 }
-
 
 .host p {
     font-size: 14px;

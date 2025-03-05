@@ -19,7 +19,7 @@
             <a href="#browse-cars">Browse Cars</a>
             <a href="help.php">Help</a>
             <a href="#meet-the-hosts">Meet the Hosts</a>
-            <a href="#contact-info">Contact Us</a>
+            <a href="#contact">Contact Us</a>
         </div>
         <div class="auth-buttons">
             <button onclick="window.location.href='signup.php'">Sign Up</button>
@@ -117,13 +117,15 @@
         <img src="carcollage.png" alt="Car collage" class="car-image">
         <button onclick="window.location.href='browse-cars.php'">Browse Cars</button>
     </div> -->
+    <br><br>
     <div id="browse-cars" class="browse-cars-container">
     <div class="car-image-container">
-        <img src="carcollage.png" alt="Car collage" class="car-image">
+        <img src="carscollage.png" alt="Car collage" class="car-image">
     </div>
     <div class="browse-text">
         <h1>Browse Cars for Rent</h1>
         <button onclick="window.location.href='browse-cars.php'" class="browse-btnn">Browse Cars</button>
+    </div>
     </div>
 
 
@@ -140,6 +142,7 @@
     <!-- Meet the Hosts Section -->
     <section id="meet-the-hosts">
     <h2>Meet the Hosts</h2>
+    <br>
     <div class="hosts-container">
         <div class="host">
             <img src="../logoimages/m.png" alt="Michelle Williams">
@@ -167,7 +170,7 @@
     <h2>Contact Us</h2>
     <div class="contact-box">
         <p>For any inquiries, reach out to us:</p>
-        <p>Email: <a href="mailto:team@yourproject.com">team@yourproject.com</a></p>
+        <p>Email: <a href="mailto:Rar@wayne.edu.com">Rar@wayne.edu</a></p>
     </div>
 </section>
 
