@@ -30,7 +30,7 @@
     <div class="hero-content">
         <div class="login-container">
             <h1>Login to HonkAndSmile </h1>
-            <form action="process-login.php" method="post">
+            <form action="home.php" method="post">
                 <div class="input-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email" required>
