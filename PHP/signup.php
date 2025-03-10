@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RAR - Sign Up</title>
-    <link rel="stylesheet" href="../CSS/signup.css">
+    <link rel="stylesheet" href="../CSS/signup.css"> 
 
 </head>
 <body>
@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="hero-content">
         <div class="signup-container">
             <h1>Create an Account</h1>
-            <form id="signup-form" action="login.php" method="post" onsubmit="return validateForm()">
+            <form id="signup-form" action="signup.php" method="post" onsubmit="return validateForm()">
                 <div class="input-group">
                     <label for="fname">First Name</label>
                     <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
