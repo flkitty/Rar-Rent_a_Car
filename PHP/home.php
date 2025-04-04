@@ -1,11 +1,25 @@
+<?php
+session_start();
+
+// Check if user is logged in
+if (!isset($_SESSION['Rar_userid'])) {
+    header("Location: login.php");
+    exit();
+}
+
+// Get username from session
+$username = isset($_SESSION['Rar_username']) ? $_SESSION['Rar_username'] : 'Guest';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HonkAndSmile - Home</title>
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="styles.css">
+
+    <title>RAR - Home</title>
+    <link rel="stylesheet" href="../CSS/home.css">
 </head>
 <body>
     <div class="navbar">
@@ -17,9 +31,9 @@
         <div class="menu">
             <a href="#hero-image">Home</a>
             <a href="#browse-cars">Browse Cars</a>
-            <a href="#most-rented">Cars of the Month</a>
+            <a href="help.php">Help</a>
             <a href="#meet-the-hosts">Meet the Hosts</a>
-            <a href="#contact-info">Contact Us</a>
+            <a href="#contact">Contact Us</a>
         </div>
         <div class="auth-buttons">
             <button onclick="window.location.href='signup.php'">Sign Up</button>
@@ -30,7 +44,7 @@
     <!-- Background Image Section -->
     <div id="hero-image" class="hero-image">
     <div class="hero-content">
-        <h1>Welcome to HonkAndSmile!</h1>
+        <h1>Welcome to RAR!</h1>
         <p>Your trusted car rental service with flexible payment plans up to 3 months.</p>
         <!-- Search Section -->
         <div class="search-section">
@@ -98,7 +112,7 @@
                 </script>
 
                     <!-- Load the Google Maps API -->
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCelw4cTPbbBcxST_7k53wvy5U9G1JkLTE&libraries=places&callback=initMap" async defer></script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGevhm49QqHUuNsrEs4kvSAHV8NX_uBs4&libraries=places&callback=initMap" async defer></script>
             </form>
         </div>
     </div>
@@ -111,45 +125,79 @@
         <img src="car3.jpg" alt="Car 3" class="car-image">
     </div>
 
-    <!-- Browse Cars Section -->
-    <div id="browse-cars" class="browse-cars">
-        <h2>Browse Cars for Rent</h2>
+    <!-- Browse Cars Section 
+    <div id="browse-cars" class="browse-cars  ">
+        <h1>Browse Cars for Rent</h1>
+        <img src="carcollage.png" alt="Car collage" class="car-image">
         <button onclick="window.location.href='browse-cars.php'">Browse Cars</button>
+    </div> -->
+    <br><br>
+    <div id="browse-cars" class="browse-cars-container">
+    <div class="car-image-container">
+        <img src="carscollage.png" alt="Car collage" class="car-image">
+    </div>
+    <div class="browse-text">
+        <h1>Browse Cars for Rent</h1>
+        <button onclick="window.location.href='browse-cars.php'" class="browse-btnn">Browse Cars</button>
+    </div>
     </div>
 
-    <!-- Most Rented Cars Section -->
-    <div id="most-rented" class="most-rented">
-        <h2>Most Rented Cars This Month</h2>
+
+    <!-- Most Rented Cars Section 
+    <div id="help" class="help">
+        <h2>Need help?</h2>
         <div class="cars">
             <div class="car-item">Car 1</div>
             <div class="car-item">Car 2</div>
             <div class="car-item">Car 3</div>
         </div>
-    </div>
+    </div>-->
 
     <!-- Meet the Hosts Section -->
     <section id="meet-the-hosts">
     <h2>Meet the Hosts</h2>
+<<<<<<< HEAD:home.php
     <div class="hosts-container">
         <div class="host">
             <img src="https://via.placeholder.com/150" alt="Michelle Williams">
+=======
+    <br>
+    <div class="hosts-container">
+        <div class="host">
+            <img src="../logoimages/m.png" alt="Michelle Williams">
+>>>>>>> b8f7a7fbc02c668f2e0315b0ec4b7380c02f3773:PHP/home.php
             <h3>Michelle Williams</h3>
             <p>Email: <a href="mailto:hh0111@wayne.edu">hh0111@wayne.edu</a></p>
         </div>
         <div class="host">
+<<<<<<< HEAD:home.php
             <img src="https://via.placeholder.com/150" alt="Faiza Laskar">
             <h3>Faiza Laskar</h3>
             <p>Email: <a href="mailto:hh0237@wayne.edu">hh0237@wayne.edu</a></p>
         </div>
         <div class="host">
             <img src="https://via.placeholder.com/150" alt="Tim Bui">
+=======
+            <img src="../logoimages/t.png" alt="Tim Bui">
+>>>>>>> b8f7a7fbc02c668f2e0315b0ec4b7380c02f3773:PHP/home.php
             <h3>Tim Bui</h3>
             <p>Email: <a href="mailto:buitimanh@wayne.edu">buitimanh@wayne.edu</a></p>
         </div>
         <div class="host">
+<<<<<<< HEAD:home.php
             <img src="https://via.placeholder.com/150" alt="Dheye Algalhan">
             <h3>Dheye Algalhan</h3>
             <p>Email: <a href="mailto:hz8323@wayne.edu">hz8323@wayne.edu</a></p>
+=======
+            <img src="../logoimages/d.png" alt="Dheye Algalhan">
+            <h3>Dheye Algalhan</h3>
+            <p>Email: <a href="mailto:hz8323@wayne.edu">hz8323@wayne.edu</a></p>
+        </div>
+        <div class="host">
+            <img src="../logoimages/f.png" alt="Faiza Laskar">
+            <h3>Faiza Laskar</h3>
+            <p>Email: <a href="mailto:faizaklaskar@gmail.com">faizaklaskar@gmail.com</a></p>
+>>>>>>> b8f7a7fbc02c668f2e0315b0ec4b7380c02f3773:PHP/home.php
         </div>
     </div>
 </section>
@@ -157,6 +205,7 @@
     <h2>Contact Us</h2>
     <div class="contact-box">
         <p>For any inquiries, reach out to us:</p>
+<<<<<<< HEAD:home.php
         <p>Email: <a href="mailto:team@yourproject.com">team@yourproject.com</a></p>
     </div>
 </section>
@@ -171,11 +220,15 @@
             <li>Teammate three - Phone: 123-456-7893 - Email: ac1234@wayne.edu</li>
             <li>Teammate four - Phone: 123-456-7894 - Email: ad1234@wayne.edu</li>
         </ul>
+=======
+        <p>Email: <a href="mailto:Rar@wayne.edu.com">Rar@wayne.edu</a></p>
+>>>>>>> b8f7a7fbc02c668f2e0315b0ec4b7380c02f3773:PHP/home.php
     </div>
+</section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 HonkAndSmile</p>
+        <p>&copy; 2025 Rar</p>
         <p><a href="termsandconditions.php">Terms and Conditions</a> | <a href="privacy.php">Privacy</a></p>
     </footer>
 

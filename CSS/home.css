@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;  
 }
 
 /* Navbar Styling */
@@ -57,7 +57,7 @@
 /* Background Image Styling */
 /* Hero Image Styling */
 .hero-image {
-    background-image: url(signupsignincover.webp);
+    background-image: url(HOMECOVER.webp);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -153,23 +153,51 @@
 }
 
 /* Browse Cars Section */
-.browse-cars {
-    text-align: center;
-    margin-top: 30px;
+
+.browse-cars-container {
+    display: flex;
+    align-items: center; /* Aligns image and text vertically */
+    justify-content: space-between; /* Spreads content across */
+    gap: 30px; /* Adds spacing between the image and text */
+    padding: 20px;
 }
 
-.browse-cars button {
-    padding: 10px 20px;
-    background-color: #28a745;
+.car-image-container {
+    flex: 1.5; /* Makes the image take half the space */
+    text-align: left;
+}
+
+.car-image {
+    width: 100%; /* Makes the image responsive */
+}
+
+.browse-text {
+    flex: 1; /* Makes text take the other half */
+    text-align: center;
+}
+
+.browse-text h1 {
+    font-size: 70px; /* Increases text size */
+    font-weight: bold;
+}
+
+.browse-btnn {
+    
+    margin-top: 15px;
+    padding: 12px 24px;
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 18px;
+    align-items: center;
 }
 
-.browse-cars button:hover {
-    background-color: #218838;
+.browse-btnn:hover {
+    background-color: #0056b3;
 }
+
 
 /* Most Rented Cars */
 .most-rented {
@@ -197,41 +225,81 @@
 }
 
 /* Meet the Hosts */
-.meet-the-hosts {
+#meet-the-hosts {
     text-align: center;
-    margin-top: 40px;
+    padding: 40px;
+    background-color: #f4f4f4;
+    font-size: 28px;
 }
 
-.hosts {
+
+.hosts-container {
     display: flex;
     justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
+
 
 .host {
-    margin: 0 20px;
+    width: 250px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid #007BFF; /* Optional: Blue outline */
+}
+
+
+.host img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.host h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.host p {
+    font-size: 14px;
+    color: #333;
+}
+
+
+.host a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+
+/* Styling for Contact Section */
+#contact {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+}
+
+
+.contact-box {
+    display: inline-block;
     padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    width: 200px;
+    border: 3px solid #007BFF; /* Blue colored square outline */
+    border-radius: 8px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Contact Info Section */
-.contact-info {
-    text-align: center;
-    margin-top: 40px;
+
+.contact-box p {
+    font-size: 16px;
+    color: #333;
 }
 
-.contact-info ul {
-    list-style: none;
-    padding: 0;
-}
-
-.contact-info li {
-    margin: 10px 0;
-    font-size: 1rem;
-}
 
 /* Footer Styling */
 footer {
@@ -250,3 +318,4 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
