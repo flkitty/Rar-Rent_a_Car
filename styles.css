@@ -1,0 +1,66 @@
+/* Styling for "Meet the Hosts" Section */
+#meet-the-hosts {
+    text-align: center;
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+.hosts-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.host {
+    width: 220px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid #007BFF; /* Optional: Blue outline */
+}
+
+.host img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.host h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.host p {
+    font-size: 14px;
+    color: #333;
+}
+
+.host a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+/* Styling for Contact Section */
+#contact {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.contact-box {
+    display: inline-block;
+    padding: 20px;
+    border: 3px solid #007BFF; /* Blue colored square outline */
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-box p {
+    font-size: 16px;
+    color: #333;
+}
