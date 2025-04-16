@@ -1,50 +1,23 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $fname = trim($_POST['fname']);
-    $lname = trim($_POST['lname']);
-    $email = trim($_POST['email']);
+
+include("../classes/connect.php");
+include("../classes/signup.php");
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $signup = new Signup();
+    $result = $signup->evaluate($_POST);
+    
+    
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $email = $_POST['email'];
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm_password'];
 
+    header("Location: login.php");
+    exit();
     // Validation flags
-    $errors = [];
-
-    // Validate first and last name
-    if (!preg_match("/^[A-Za-z]+$/", $fname)) {
-        $errors[] = "First name must contain only letters.";
-    }
-    if (!preg_match("/^[A-Za-z]+$/", $lname)) {
-        $errors[] = "Last name must contain only letters.";
-    }
-
-    // Validate email
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $errors[] = "Invalid email format.";
-    }
-
-    // Validate password strength
-    if (!preg_match("/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/", $password)) {
-        $errors[] = "Password must be at least 8 characters long, include uppercase, lowercase, a number, and a special character.";
-    }
-
-    // Validate password match
-    if ($password !== $confirm_password) {
-        $errors[] = "Passwords do not match.";
-    }
-
-    // If there are errors, show them
-    if (!empty($errors)) {
-        foreach ($errors as $error) {
-            echo "<p style='color: red;'>$error</p>";
-        }
-    } else {
-        // Hash password and save user data (Example)
-        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-        echo "<p style='color: green;'>Sign-up successful! Your data is being saved.</p>";
-
-        // Save to database or perform further processing
-        // Example: saveUserToDatabase($fname, $lname, $email, $hashed_password);
-    }
+    
 }
 ?>
 
@@ -54,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RAR - Sign Up</title>
-    <link rel="stylesheet" href="../CSS/signup.css">
+    <link rel="stylesheet" href="../CSS/signup.css"> 
 
 </head>
 <body>
@@ -81,16 +54,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="hero-content">
         <div class="signup-container">
             <h1>Create an Account</h1>
-            <form id="signup-form" action="login.php" method="post" onsubmit="return validateForm()">
+            <form id="signup-form" action="signup.php" method="post" onsubmit="return validateForm()">
                 <div class="input-group">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
-                    <small id="fname-error" class="error-message"></small>
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required>
+                    <small id="first_name-error" class="error-message"></small>
                 </div>
                 <div class="input-group">
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
-                    <small id="lname-error" class="error-message"></small>
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" name="last_name" placeholder="Enter your last name" required>
+                    <small id="last_name-error" class="error-message"></small>
                 </div>
                 <div class="input-group">
                     <label for="email">Email</label>
@@ -123,34 +96,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             let isValid = true;
 
             // Get form fields
-            const fname = document.getElementById('fname');
-            const lname = document.getElementById('lname');
+            const first_name = document.getElementById('first_name');
+            const last_name = document.getElementById('last_name');
             const email = document.getElementById('email');
             const password = document.getElementById('password');
             const confirmPassword = document.getElementById('confirm-password');
 
             // Get error fields
-            const fnameError = document.getElementById('fname-error');
-            const lnameError = document.getElementById('lname-error');
+            const first_nameError = document.getElementById('first_name-error');
+            const last_nameError = document.getElementById('last_name-error');
             const emailError = document.getElementById('email-error');
             const passwordError = document.getElementById('password-error');
             const confirmPasswordError = document.getElementById('confirm-password-error');
 
             // Clear previous error messages
-            fnameError.textContent = '';
-            lnameError.textContent = '';
+            first_nameError.textContent = '';
+            last_nameError.textContent = '';
             emailError.textContent = '';
             passwordError.textContent = '';
             confirmPasswordError.textContent = '';
 
             // Validate first name and last name (only letters)
             const nameRegex = /^[A-Za-z]+$/;
-            if (!nameRegex.test(fname.value)) {
-                fnameError.textContent = 'First name must contain only letters.';
+            if (!nameRegex.test(first_name.value)) {
+                first_nameError.textContent = 'First name must contain only letters.';
                 isValid = false;
             }
-            if (!nameRegex.test(lname.value)) {
-                lnameError.textContent = 'Last name must contain only letters.';
+            if (!nameRegex.test(last_name.value)) {
+                last_nameError.textContent = 'Last name must contain only letters.';
                 isValid = false;
             }
 
@@ -167,7 +140,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 passwordError.textContent = 'Password must be at least 8 characters long, include uppercase, lowercase, a number, and a special character.';
                 isValid = false;
             }
-
             // Confirm password match
             if (password.value !== confirmPassword.value) {
                 confirmPasswordError.textContent = 'Passwords do not match.';

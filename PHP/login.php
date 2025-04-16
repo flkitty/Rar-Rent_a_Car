@@ -1,3 +1,26 @@
+<?php
+session_start();
+
+include("../classes/connect.php");
+include("../classes/login.php");
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $login = new Login();
+    $result = $login->evaluate($_POST);
+
+    if ($result === true) {
+        $username = urlencode($_SESSION['Rar_username']);
+        header("Location: home.php");
+        exit();
+    } else {
+        // Display error messages
+        $_SESSION['login_error'] = implode("<br>", $result);
+        header("Location: login.php");
+        exit();
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,8 +52,14 @@
     <div id="hero-image" class="hero-image">
     <div class="hero-content">
         <div class="login-container">
-            <h1>Login to HonkAndSmile </h1>
-            <form action="home.php" method="post">
+            <h1>Login to Rar </h1>
+            <?php
+            if (isset($_SESSION['login_error'])) {
+                echo "<p style='color:red;'>" . $_SESSION['login_error'] . "</p>";
+                unset($_SESSION['login_error']);
+            }
+            ?>
+            <form action="login.php" method="post">
                 <div class="input-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email" required>

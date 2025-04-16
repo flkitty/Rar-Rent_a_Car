@@ -30,6 +30,10 @@
     <div class="hero-content">
     <div class="terms-container">
         <h1>Terms and Conditions</h1>
+    </header1>
+
+    <section class="privacy-container">
+        <h2>Introduction</h2>
         <p>Welcome to our Car Rental Service. By accessing or using this platform, you agree to adhere to and be bound by the following terms and conditions. These terms are designed to ensure a transparent, secure, and efficient experience for all users. Please read them carefully before proceeding to use our services.</p>
         
         <h2>1. Acceptance of Terms</h2>
