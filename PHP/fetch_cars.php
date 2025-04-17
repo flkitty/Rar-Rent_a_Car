@@ -13,10 +13,10 @@ foreach ($filters as $field) {
   if (!empty($_GET[$field])) {
     $value = $conn->real_escape_string($_GET[$field]);
     if (in_array($field, ['mileage', 'rental_price_per_day', 'rental_price_per_week'])) {
-      $sql .= " AND $field <= '$value'";
+      $sql .= " AND `$field` <= '$value'";
     } else {
-      $sql .= " AND $field = '$value'";
-    }
+      $sql .= " AND `$field` = '$value'";
+    }    
   }
 }
 
@@ -25,7 +25,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   while ($car = $result->fetch_assoc()) {
     echo "<div class='car-card'>
-            <img src='placeholder_car.png' alt='Car Image'>
+            <img src='../logoimages/redcar.jpg' alt='Car Image'>
             <div class='info'>
               <h3>{$car['make']} {$car['model']} ({$car['year']})</h3>
               <p>Color: {$car['color']}</p>
