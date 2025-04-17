@@ -33,13 +33,16 @@ if ($result->num_rows > 0) {
               <p>Mileage: {$car['mileage']} mi</p>
               <p>Fuel: {$car['fuel_type']}</p>
               <p>Price/Day: $ {$car['rental_price_per_day']}</p>
-              <p>Status: {$car['availability_status']}</p>
-            </div>
-          </div>";
+              <p>Status: <strong>" . ucfirst($car['availability_status']) . "</strong></p>";
+  
+    if ($car['availability_status'] == 'available') {
+      echo "<a href='payment.php?car_id={$car['id']}' class='reserve-button'>Reserve or Rent</a>";
+    } else {
+      echo "<p class='unavailable'>This car is not available.</p>";
+    }
+  
+    echo "</div></div>";
   }
-} else {
-  echo "<p class='no-result'>No cars match the selected filters.</p>";
-}
-
+}  
 $conn->close();
 ?>
