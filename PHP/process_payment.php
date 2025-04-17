@@ -38,3 +38,4 @@ $conn->query("UPDATE cars SET availability_status = '$new_status' WHERE id = $ca
 echo "<p>Payment processed successfully. <a href='view_payment_plan.php?payment_id=$payment_id'>View Payment Plan</a></p>";
 
 ?>
+
