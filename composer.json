@@ -1,0 +1,17 @@
+{
+    "name": "faiza/unit-tests",
+    "autoload": {
+        "psr-4": {
+            "": "classes/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Faiza Laskar",
+            "email": "faizaklaskar@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
+    }
+}

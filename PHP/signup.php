@@ -1,5 +1,5 @@
 <?php
-
+require_once 'classes/connect.php';
 include("../classes/connect.php");
 include("../classes/signup.php");
 

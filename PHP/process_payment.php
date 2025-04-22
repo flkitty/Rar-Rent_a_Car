@@ -39,3 +39,10 @@ echo "<p>Payment processed successfully. <a href='view_payment_plan.php?payment_
 
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment</title>
+  <link rel="stylesheet" href="../CSS/payment.css">
+</head>

@@ -37,7 +37,7 @@
                 <!-- Week Button -->
                 <a href="browse-carsweek.php" class="rent-button week-button">
                     Rent for a Week
-                    <p class="payment-info">Make a 3-month payment plan if it's over $500!</p>
+                    <p class="payment-info">Make a 3-month payment plan!</p>
                 </a>
             </div>
         </div>
