@@ -442,6 +442,7 @@ footer a:hover {
     border-radius: 12px;
     margin: 40px auto;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     width: 90%;
@@ -631,7 +632,25 @@ footer a:hover {
       text-align: center;
     }
   
+    .my-payment-section h2 {
+      font-size: 1rem;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
     
+    .my-payment-section .payment-explanation {
+      font-size: .8rem;
+      margin-bottom: 25px;
+      line-height: 1.5;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      font-style: italic;
+      color: #ddd;
+    }
+    .my-payment-section {
+      font-size: .7rem;
+    }
   }  
   
   
@@ -735,6 +754,23 @@ footer a:hover {
       animation: slide 13s infinite;
   }
   
+  .my-payment-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  
+  .my-payment-section .payment-explanation {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+    color: #ddd;
+  }
+
     /* --- How It Works Section --- */
     .how-it-works-container {
       flex-direction: column;
